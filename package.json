@@ -10,9 +10,8 @@
     "node": ">=22.7.0"
   },
   "imports": {
-    "#*": "./src/*",
-    "#helper/*": "./src/helper/*",
-    "#decorator/*": "./src/decorator/*"
+    "#api-helper/*": "./api/src/helper/*",
+    "#webapp-component/*": "./webapp/src/component/*"
   },
   "scripts": {
     "start": "node --no-warnings --experimental-transform-types --watch ./src/index.ts",
@@ -21,11 +20,11 @@
     "tsc": "tsc --diagnostics"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
+    "@biomejs/biome": "^1.9.3",
     "typescript": "^5.6.2",
-    "vitest": "^2.0.5"
+    "vitest": "^2.1.2"
   },
   "dependencies": {
-    "@types/node": "^22.5.4"
+    "@types/node": "^22.7.4"
   }
 }

@@ -1,6 +1,6 @@
 import x, { fn, type numeric } from '#helper/foe.ts';
 
-const { default: Foe } = await import('#Foe.ts');
+const { default: Foe } = await import('#api/helper/Foe.ts');
 
 const bar: numeric = new Foe().bar(1);
 
