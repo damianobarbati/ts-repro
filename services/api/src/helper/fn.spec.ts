@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { fn } from '#helper/foe';
+import { fn } from '#api/helper/fn.ts';
 
 test('foe', () => {
   const actual = fn(1);

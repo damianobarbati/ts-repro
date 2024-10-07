@@ -1,4 +1,5 @@
 import type { User } from '@ts-repro/types/User';
+import UserSchema from '@ts-repro/types/src/schemas/User';
 import x, { fn, type numeric } from '#api/helper/fn.ts';
 
 const { default: Foe } = await import('#api/Foe.ts');
@@ -8,3 +9,5 @@ console.log({ x, fn: fn(2), bar });
 
 const user: User = { id: 1, email: 'email', password: 'password' };
 console.log(user);
+
+UserSchema.parse(user);
