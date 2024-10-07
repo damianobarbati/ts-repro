@@ -1,0 +1,11 @@
+{
+  "name": "api",
+  "type": "module",
+  "imports": {
+    "#api/*": "./src/*",
+    "#api/helper/*": "./src/helper/*"
+  },
+  "scripts": {
+    "start:dev": "node --no-warnings --experimental-transform-types ./src/index.ts"
+  }
+}

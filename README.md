@@ -6,7 +6,10 @@ This repro showcases the usage of the `--experimental-strip-transform` flag and 
 - Biome
 - Vitest
 
-⚠️ Not tested in a monorepo yet. ⚠️
+Problems in the monorepo:
+- `pnpm tsc` is broken with `#` subpath imports.
+- IDE (`webstorm` in my case) cannot resolve the `#` subpath imports and autocomplete them.
+- IDE (`webstorm` in my case) cannot resolve the sibling package `@` imports and autocomplete them.
 
 ## Requirements:
 - `fnm` (eg: `brew install fnm`)
@@ -17,7 +20,7 @@ This repro showcases the usage of the `--experimental-strip-transform` flag and 
 Run:
 ```sh
 pnpm install
-pnpm start
+pnpm -F api start:dev
 ```
 
 Also `tsc`, `biome` and `vitest` running fine:
