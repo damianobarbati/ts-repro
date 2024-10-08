@@ -4,28 +4,21 @@
   "repository": "https://github.com/damianobarbati/strip-types-repro",
   "license": "MIT",
   "version": "1.0.0",
-  "description": "",
+  "description": "Native Typescript support / stripping.",
   "type": "module",
   "engines": {
     "node": ">=22.7.0"
   },
-  "imports": {
-    "#*": "./src/*",
-    "#helper/*": "./src/helper/*",
-    "#decorator/*": "./src/decorator/*"
-  },
   "scripts": {
-    "start": "node --no-warnings --experimental-transform-types --watch ./src/index.ts",
-    "test": "vitest run",
     "lint": "biome check --write",
     "tsc": "tsc --diagnostics"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
+    "@biomejs/biome": "^1.9.3",
     "typescript": "^5.6.2",
-    "vitest": "^2.0.5"
+    "vitest": "^2.1.2"
   },
   "dependencies": {
-    "@types/node": "^22.5.4"
+    "@types/node": "^22.7.5"
   }
 }
