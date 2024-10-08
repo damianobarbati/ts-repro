@@ -10,7 +10,6 @@
     "node": ">=22.7.0"
   },
   "scripts": {
-    "test": "vitest run",
     "lint": "biome check --write",
     "tsc": "tsc --diagnostics"
   },

@@ -26,6 +26,6 @@ pnpm -F api start:dev
 Also `tsc`, `biome` and `vitest` running fine:
 ```sh
 pnpm tsc
-pnpm lint ./src
+pnpm lint ./services
 pnpm test
 ```
