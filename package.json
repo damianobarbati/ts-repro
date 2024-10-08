@@ -19,6 +19,6 @@
     "vitest": "^2.1.2"
   },
   "dependencies": {
-    "@types/node": "^22.7.4"
+    "@types/node": "^22.7.5"
   }
 }
