@@ -1,5 +1,5 @@
-import type { User } from '@ts-repro/types/User.ts';
-import UserSchema from '@ts-repro/types/src/schemas/User.ts';
+import type { User } from '@project/types/User.ts';
+import UserSchema from '@project/types/src/schemas/User.ts';
 import { expect, test } from 'vitest';
 import Foe from '#api/Foe.ts';
 

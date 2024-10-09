@@ -1,6 +1,6 @@
-import type { User } from '@ts-repro/types/User.ts';
-import UserSchema from '@ts-repro/types/src/schemas/User.ts';
-import x, { fn, type numeric } from '#api/helper/fn.ts';
+import type { User } from '@project/types/User.ts';
+import UserSchema from '@project/types/src/schemas/User.ts';
+import x, { fn, type numeric } from '#api/helper/fn.js';
 
 const { default: Foe } = await import('#api/Foe.ts');
 
