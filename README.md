@@ -6,9 +6,8 @@ This repro showcases the usage of the `--experimental-strip-transform` flag and 
 - Biome
 - Vitest
 
-Problems in the monorepo:
-- `pnpm tsc` is broken with `@` imports.
-- IDE (`webstorm` in my case) cannot resolve the `@` aliased module imports and autocomplete them.
+Keep in mind:
+- To have a package PKG1 importing from another package PKG2, PKG2 must have an `exports` field in its `package.json` file.
 
 ## Requirements:
 - `fnm` (eg: `brew install fnm`)

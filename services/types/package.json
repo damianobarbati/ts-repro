@@ -2,12 +2,12 @@
   "name": "types",
   "type": "module",
   "exports": {
-    ".": {
-      "type": "./src",
-      "schema": "./src/schemas"
-    }
+    "./*": "./src/*"
   },
-  "devDependencies": {
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
     "zod": "^3.23.8"
   }
 }

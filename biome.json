@@ -14,11 +14,6 @@
     "lineWidth": 160,
     "lineEnding": "lf"
   },
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "single"
-    }
-  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -28,10 +23,6 @@
       },
       "complexity": {
         "noStaticOnlyClass": "off"
-      },
-      "suspicious": {
-        "noExplicitAny": "off",
-        "noImplicitAnyLet": "off"
       }
     }
   }
