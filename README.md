@@ -6,7 +6,8 @@ This repro showcases the usage of the `--experimental-strip-transform` flag and 
 - Biome
 - Vitest
 
-⚠️ Not tested in a monorepo yet. ⚠️
+Keep in mind:
+- To have a package PKG1 importing from another package PKG2, PKG2 must have an `exports` field in its `package.json` file.
 
 ## Requirements:
 - `fnm` (eg: `brew install fnm`)
@@ -17,12 +18,12 @@ This repro showcases the usage of the `--experimental-strip-transform` flag and 
 Run:
 ```sh
 pnpm install
-pnpm start
+pnpm -F api start:dev
 ```
 
-Also `tsc`, `biome` and `vitest` running fine:
+Also `vitest`, `tsc` and `biome` running fine:
 ```sh
+pnpm -F api test
 pnpm tsc
-pnpm lint ./src
-pnpm test
+pnpm lint ./services
 ```
