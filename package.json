@@ -14,7 +14,6 @@
     "tsc": "tsc --diagnostics",
     "test": "vitest run"
   },
-  "workspaces": ["services/*"],
   "devDependencies": {
     "@biomejs/biome": "^1.9.3p",
     "typescript": "^5.6.3",
