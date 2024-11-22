@@ -1,3 +1,4 @@
+import Redis from "ioredis";
 import { type User, UserSchema } from "types/User.ts";
 import x, { fn, type numeric } from "#api/helper/fn.ts";
 
@@ -8,3 +9,6 @@ console.log({ x, fn: fn(2), bar });
 
 const user: User = UserSchema.parse({ id: 1, email: "john.doe@gmail.com", password: "password" });
 console.log(user);
+
+const redis = new Redis();
+console.log(redis);
