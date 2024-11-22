@@ -1,6 +1,9 @@
 {
   "name": "types",
   "type": "module",
+  "imports": {
+    "#types/*": "./src/*"
+  },
   "exports": {
     "./*": "./src/*"
   },
