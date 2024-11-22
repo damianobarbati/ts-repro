@@ -11,7 +11,7 @@
   },
   "scripts": {
     "lint": "biome check --write",
-    "tsc": "tsc --diagnostics",
+    "tsc": "tsc",
     "test": "vitest run"
   },
   "devDependencies": {
