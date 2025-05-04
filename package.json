@@ -11,15 +11,15 @@
   },
   "scripts": {
     "lint": "biome check --write",
-    "tsc": "tsc --diagnostics",
+    "tsc": "tsc",
     "test": "vitest run"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.3p",
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.5"
+    "@biomejs/biome": "^1.9.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
   },
   "dependencies": {
-    "@types/node": "^22.9.1"
+    "@types/node": "^22.15.3"
   }
 }
