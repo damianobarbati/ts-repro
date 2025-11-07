@@ -22,22 +22,23 @@ Dependencies:
 
 Setup:
 ```sh
-fnm install
-fnm use
-npm install -g pnpm
+fnm install # nodejs from .nvmrc
+fnm use # nodejs from .nvmrc
+corepack enable # package manager from package.json
+corepack install # package manager from package.json
+pnpm i # install deps
 ```
 
 ## How to run
 
 Run:
 ```sh
-pnpm install
 pnpm -F api start:dev
 ```
 
 Also `vitest`, `tsc` and `biome` running fine:
 ```sh
 pnpm tsc
-pnpm lint ./services
+pnpm lint
 pnpm -F api test
 ```
