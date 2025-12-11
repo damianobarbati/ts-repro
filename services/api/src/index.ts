@@ -1,6 +1,11 @@
 import { type User, UserSchema } from "types/User.ts";
 import x, { fn, type numeric } from "#api/helper/fn.ts";
 
+// uncomment the next block to get ts import error
+// import Redis from "ioredis";
+// const redis = new Redis();
+// console.log(redis);
+
 const { default: Foe } = await import("#api/Foe.ts");
 
 const bar: numeric = new Foe().bar(1);

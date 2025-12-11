@@ -11,6 +11,7 @@
     "start": "node --no-warnings --experimental-transform-types ./src/index.ts"
   },
   "dependencies": {
-    "types": "workspace:^"
+    "types": "workspace:^",
+    "ioredis": "^5.8.2"
   }
 }
